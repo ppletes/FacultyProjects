@@ -1,0 +1,6 @@
+id vrste vozila; najam; po satu; po km
+1; 5; 2; 1
+2; 5; 2; 2
+3; 10; 3; 3
+4; 30; 5; 5
+a; a; a; a;

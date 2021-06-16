@@ -1,0 +1,211 @@
+
+
+
+1; 2020-10-16 08:01:00; 1; 6; 1
+U 2020-10-16 08:01:00 korisnik Pero Kos traži na lokaciji Kod placa broj raspoloživih romobil/a.
+Rezultat: 2
+
+6; struktura
+
+PODACI O STRUKTURI:
+-----------------------------------------------
+| Jednica              | Lokacija             |
+
+-----------------------------------------------
+| Tvrtka E-vozila      | HT fast Vukovarska   | 
+
+-----------------------------------------------
+| Varaždinska županija | ELEN Ludbreg         | 
+
+-----------------------------------------------
+| Varaždinska županija | Martijanec           | 
+
+-----------------------------------------------
+| Varaždinska županija | Sračinec             | 
+
+-----------------------------------------------
+| Mađumurska županija  | Autobusni kolodvor   | 
+
+-----------------------------------------------
+| Varaždin grad        | Autobusni kolodvor   | 
+
+-----------------------------------------------
+| Varaždin grad        | Bivši Mercator       | 
+
+-----------------------------------------------
+| Varaždin grad        | Kod suda             | 
+
+-----------------------------------------------
+| Varaždin grad        | Kod placa            | 
+
+-----------------------------------------------
+| Varaždin grad        | Kod Sjevera          | 
+
+-----------------------------------------------
+| Varaždin grad        | Crodux Optujska      | 
+
+-----------------------------------------------
+| Čakovec              | Kod bazena           | 
+
+-----------------------------------------------
+| Čakovec              | Kod hotela Park      | 
+
+-----------------------------------------------
+| Čakovec              | Kod stare knjižnice  | 
+
+-----------------------------------------------
+
+KUMULATIV:
+-----------------------------------------------
+| Jednica              | Lokacija             |
+
+-----------------------------------------------
+| Tvrtka E-vozila      | Auto Jurković, HT fa | 
+
+-----------------------------------------------
+| Varaždinska županija | ELEN Ludbreg, Martij | 
+
+-----------------------------------------------
+| Mađumurska županija  | Autobusni kolodvor   | 
+
+-----------------------------------------------
+| Varaždin grad        | Autobusni kolodvor,  | 
+
+-----------------------------------------------
+| Čakovec              | Kod bazena, Kod hote | 
+
+-----------------------------------------------
+Morate upisati veći datum od prethodno unesenog.
+Ili ne valja datum u argumentima.
+
+2; 2020-10-16 08:05:00; 1; 6; 1
+U 2020-10-16 08:05:00 korisnik Pero Kos traži na lokaciji Kod placa najam romobil/a.
+Rezultat: ODOBREN najam za vozilo romobil (1) sa ID-om 613.
+
+2; 2020-10-16 08:05:01; 1; 6; 1
+U 2020-10-16 08:05:01 korisnik Pero Kos traži na lokaciji Kod placa najam romobil/a.
+Korisnik je već iznajmio vozilo.
+
+2; 2020-10-16 08:30:00; 1; 7; 4
+U 2020-10-16 08:30:00 korisnik Pero Kos traži na lokaciji Kod Sjevera najam auto/a.
+Rezultat: ODOBREN najam za vozilo auto (4) sa ID-om 685.
+
+7; struktura najam 01.01.2020 01.01.2022 2
+
+PODACI O NAJMU:
+---------------------------------------------------------------
+| Jednica              | Lokacija             | Broj  |  Dani | 
+
+---------------------------------------------------------------
+| Varaždinska županija | Sračinec             |     0 |     0 | 
+
+---------------------------------------------------------------
+| Varaždin grad        | Autobusni kolodvor   |     0 |     0 | 
+
+---------------------------------------------------------------
+| Varaždin grad        | Bivši Mercator       |     0 |     0 | 
+
+---------------------------------------------------------------
+| Varaždin grad        | Kod suda             |     0 |     0 | 
+
+---------------------------------------------------------------
+| Varaždin grad        | Kod placa            |     1 |     0 | 
+
+---------------------------------------------------------------
+| Varaždin grad        | Kod Sjevera          |     1 |     0 | 
+
+---------------------------------------------------------------
+| Varaždin grad        | Crodux Optujska      |     0 |     0 | 
+
+---------------------------------------------------------------
+| Čakovec              | Kod bazena           |     0 |     0 | 
+
+---------------------------------------------------------------
+| Čakovec              | Kod hotela Park      |     0 |     0 | 
+
+---------------------------------------------------------------
+| Čakovec              | Kod stare knjižnice  |     0 |     0 | 
+
+---------------------------------------------------------------
+
+KUMULATIV:
+---------------------------------------------------------------
+| Jednica              | Lokacija             | Broj  |  Dani | 
+
+---------------------------------------------------------------
+| Varaždinska županija | ELEN Ludbreg, Martij |     0 |     0 | 
+
+---------------------------------------------------------------
+| Varaždin grad        | Autobusni kolodvor,  |     2 |     0 | 
+
+---------------------------------------------------------------
+| Čakovec              | Kod bazena, Kod hote |     0 |     0 | 
+
+---------------------------------------------------------------
+
+Na navedenoj lokaciji nema mjesta za vozilo.
+Na navedenoj lokaciji nema mjesta za vozilo.
+Na navedenoj lokaciji nema mjesta za vozilo.
+Na navedenoj lokaciji nema mjesta za vozilo.
+Na navedenoj lokaciji nema mjesta za vozilo.
+Na navedenoj lokaciji nema mjesta za vozilo.
+Na navedenoj lokaciji nema mjesta za vozilo.
+Na navedenoj lokaciji nema mjesta za vozilo.
+Na navedenoj lokaciji nema mjesta za vozilo.
+Na navedenoj lokaciji nema mjesta za vozilo.
+Na navedenoj lokaciji nema mjesta za vozilo.
+Na navedenoj lokaciji nema mjesta za vozilo.
+Na navedenoj lokaciji nema mjesta za vozilo.
+Na navedenoj lokaciji nema mjesta za vozilo.
+
+4; 2020-10-16 10:26:00; 1; 2; 1; 15
+U 2020-10-16 10:26:00 korisnik Pero Kos na lokaciji Bivši Mercator vraća unajmljeni romobil koji ima ukupno 15,00 km. Stavke računa su: 1 najam romobil/a -- 5,00 kn, najma je bio 3,00 sata -- 3,00 * 2,00 kn = 6,00 kn, prethodno stanje bilo je 0,00 km znači da je prošao 15,00 km -- 15,00 * 1,00 kn = 15.0 kn. Račun ukupno iznosi 5,00 kn + 6.0 kn + 15.0 kn = 26,00 kn.
+
+2; 2020-10-16 11:26:01; 1; 2; 1
+U 2020-10-16 11:26:01 korisnik Pero Kos traži na lokaciji Bivši Mercator najam romobil/a.
+Na navedenoj lokaciji više nema raspoloživih vozila.
+
+7; struktura najam 01.01.2020 31.11.2020 2
+
+PODACI O NAJMU:
+---------------------------------------------------------------
+| Jednica              | Lokacija             | Broj  |  Dani | 
+
+---------------------------------------------------------------
+| Varaždinska županija | Sračinec             |     0 |     0 | 
+
+---------------------------------------------------------------
+| Varaždin grad        | Autobusni kolodvor   |     0 |     0 | 
+
+---------------------------------------------------------------
+| Varaždin grad        | Bivši Mercator       |     0 |     0 | 
+
+---------------------------------------------------------------
+| Varaždin grad        | Kod suda             |     0 |     0 | 
+
+---------------------------------------------------------------
+| Varaždin grad        | Kod placa            |     1 |     0 | 
+
+---------------------------------------------------------------
+| Varaždin grad        | Kod Sjevera          |     1 |     0 | 
+
+---------------------------------------------------------------
+| Varaždin grad        | Crodux Optujska      |     0 |     0 | 
+
+---------------------------------------------------------------
+| Čakovec              | Kod bazena           |     0 |     0 | 
+
+---------------------------------------------------------------
+| Čakovec              | Kod hotela Park      |     0 |     0 | 
+
+---------------------------------------------------------------
+| Čakovec              | Kod stare knjižnice  |     0 |     0 | 
+
+---------------------------------------------------------------
+
+KUMULATIV:
+---------------------------------------------------------------
+| Jednica              | Lokacija             | Broj  |  Dani | 
+
+---------------------------------------------------------------
+| Varaždinska 
