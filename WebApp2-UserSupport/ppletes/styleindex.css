@@ -1,0 +1,21 @@
+.index{
+	margin-top: 10%; 
+	border: 1px; 
+	border-style: solid; 
+	width: 500px; 
+	height: 200px;
+}
+#tekst{
+	font-family: Arial;
+	font-size: 25px;
+}
+.gumb{
+  background-color: #555555;
+  border: none;
+  color: white;
+  padding: 10px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}

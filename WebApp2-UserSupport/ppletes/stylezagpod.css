@@ -1,0 +1,62 @@
+.logo1{
+	float: left;
+	margin-left: 1%;
+}
+.logo2{
+	color: black;
+	font-size: 45px;
+	font-family: Arial;
+}
+.logo2:hover{
+	color: rgb(210,36,36);
+}
+.autor{
+	color: rgb(102, 102, 102);
+	font-size: 15px;
+	font-family: Arial;
+	margin-left: 1%;
+}
+.autor:hover{
+	color: rgb(210,36,36);
+}
+.reg-pri{
+	font-size: 15px; 
+	font-family: Arial;
+	color: rgb(102, 102, 102);
+	text-decoration: none;
+}
+.reg-pri:hover{
+	color: rgb(210,36,36);
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  border: 1px solid #e7e7e7;
+  background-color: #f3f3f3;
+  font-family: Arial;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: rgb(102, 102, 102);
+  text-align: center;
+  padding: 15px 40px;
+  text-decoration: none;
+}
+
+li a:hover{
+  background-color: rgb(221, 221, 221);
+  color: black;
+}
+
+li a.trenutno {
+  color: white;
+  background-color: rgb(210,36,36);
+}
