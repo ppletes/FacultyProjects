@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:p="http://primefaces.org/ui" >
+    <h:head>
+        <title>Zadaća br. 3</title>
+        <h:outputStylesheet library="css" name="dizajn.css"/>
+        <script type="text/javascript">
+            function reload() {
+                location.reload();
+            }
+        </script>
+    </h:head>
+    <h:body>
+        <div style="text-align: center; width: 100%;">
+            <h1>Aktivnost 1.</h1>
+
+            <h:form style="display: inline;">
+                <p:panel>
+                    <h:commandButton value=" Prikaži korisnikove aerodrome " action="#{pregledPrvi.prikaziAerodrom()}" style="text-align: center; width:30%;"/><br/>
+                    <h:selectOneMenu id="koris" value="#{pregledPrvi.odabraniKorisnik}" style="width:50%;">
+                        <f:selectItem itemLabel="-- Odaberi korisnika --" itemValue="" /> 
+                        <f:selectItems value="#{pregledPrvi.korisnici}" var="k" itemLabel="#{k.ime} #{k.prezime} | (Br. aerodroma: #{k.myairportsList.size()})" itemValue="#{k.korIme}"/>
+                    </h:selectOneMenu>
+                </p:panel>
+
+                <br/><br/><br/>
+
+                <p:panel widgetVar="panelJedan" closable="true" toggleable="true" rendered="#{pregledPrvi.show}">
+                    <h:commandButton value=" Prikaži datume " action="#{pregledPrvi.pikaziDan()}" style="text-align: center; width:30%;"/><br/>
+                    <h:selectOneMenu id="odabraniAerodrom" value="#{pregledPrvi.odabraniAerodrom}" style="width:70%;">
+                        <f:selectItems value="#{pregledPrvi.aerodromi}" var="m" itemLabel="#{m.ident.name} | #{m.ident.ident} | (Br. korisnika: #{m.ident.myairportsList.size()}) | (Br. dana: #{m.ident.myairportslogList.size()}) | (Br. letova: #{m.ident.airplanesList.size()})" itemValue="#{m.id}"/>                
+                    </h:selectOneMenu>
+                </p:panel>
+
+                <br/><br/><br/>
+
+                <p:panel rendered="#{pregledPrvi.show2}">
+                    <p:dataTable value="#{pregledPrvi.aerodromiLog}" var="a" rows="7" paginator="true" paginatorTemplate="{CurrentPageReport} {FirstPageLink} {PreviousPageLink} {PageLinks} {NextPageLink} {LastPageLink} {RowsPerPageDropdown}" rowsPerPageTemplate="3,5,7">
+                        <p:column>
+                            <f:facet name="header">Dan preuzimanja</f:facet>#{pregledPrvi.formatDate(a.myairportslogPK.flightdate, 'dd.MM.yyyy')}
+                        </p:column>
+                        <p:column>
+                            <f:facet name="header">Vrijeme preuzimannja</f:facet>#{pregledPrvi.formatDate(a.stored, 'dd.MM.yyyy HH:mm:ss.SSS')}
+                        </p:column>
+                        <p:column>
+                            <h:commandButton value=" Brisanje podataka " action="#{pregledPrvi.obrisiLog(a)}">
+                                <f:ajax execute="@this" render="@form" />
+                            </h:commandButton><br/>
+                        </p:column>
+                    </p:dataTable>
+                </p:panel> 
+                
+                <br/><br/><br/>
+                
+                <p:panel rendered="#{pregledPrvi.show3}">
+                    <h:commandButton action="#{pregledPrvi.sakri()}" onclick="location.href='aktivnost1.xhtml';" value=" Vrati se na početak " style="text-align: center; width:30%;">
+                        <f:ajax execute="@this" render="@form aerodromiLog" />
+                    </h:commandButton>            
+                </p:panel> 
+                <br/>
+            </h:form>
+        </div>
+    </h:body>
+</html>
+
